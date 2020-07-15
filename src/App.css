@@ -4,8 +4,38 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: cadetblue;
-  color: #fff;
+body {
   text-align: center;
+  background-color: var(--Background);
+}
+
+h1,
+h2 {
+  color: var(--Title-Text);
+  font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+}
+
+h3,
+h4,
+h5 {
+  color: var(--MidTitle-Text);
+  font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+}
+
+p {
+  color: var(--Content-Text);
+  font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --Element: #153ead;
+  --Background: #282828;
+  --background--void: #707070;
+  --Navbar-Background: #111111;
+  --Border: #141414;
+  --Box-Shadow: #00000036;
+
+  --Content-Text: #e6e6e6;
+  --Title-Text: #f3f3f3;
+  --MidTitle-Text: #eeeeee;
 }

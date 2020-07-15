@@ -1,0 +1,22 @@
+nav.Navbar__container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background: var(--Navbar-Background);
+  border-top: 1px solid var(--Border);
+  bottom: 0;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+}
+
+nav.Navbar__container a {
+  display: flex;
+  align-items: center;
+  color: var(--Content-Text);
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
