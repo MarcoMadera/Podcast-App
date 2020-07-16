@@ -1,0 +1,35 @@
+.Podcast__container {
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.Podcast__imgs {
+  display: block;
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 50px auto;
+}
+.Podcast__img {
+  display: block;
+  height: 160px;
+  width: 160px;
+  margin: auto;
+}
+
+.Podcast__userImg {
+  display: block;
+  position: absolute;
+  margin-top: -20px;
+  left: -20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--Border);
+}
+
+.Podcast__description {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}

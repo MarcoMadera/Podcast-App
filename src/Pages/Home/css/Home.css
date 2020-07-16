@@ -1,0 +1,12 @@
+.Home__content {
+  margin-bottom: 50px;
+}
+
+.Home__content__header {
+  padding: 20px 15px;
+  margin-bottom: 100px;
+}
+
+.Home__content header > h1 {
+  padding: 0 15px;
+}

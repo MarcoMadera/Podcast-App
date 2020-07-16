@@ -5,7 +5,7 @@ const Layout = (props) => {
   return (
     <Fragment>
       {props.children}
-      <Navbar />
+      <Navbar clip={props.clip} />
     </Fragment>
   );
 };

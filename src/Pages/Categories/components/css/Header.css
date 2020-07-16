@@ -1,5 +1,4 @@
-.Channel__Header__banner {
-  min-height: 200px;
+.Categories__Header__banner {
   width: 100%;
   padding-bottom: 25%;
   background-position: 50% 50%;
@@ -7,10 +6,9 @@
   background-color: var(--background--void);
 }
 
-.Channel__Header__logo {
-  display: block;
-  margin: -50px auto 0 auto;
+.Categories__Header__logo {
   border-radius: 50%;
   max-width: 200px;
   border: 3px solid var(--Border);
+  margin-top: -50px;
 }

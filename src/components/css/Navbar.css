@@ -11,7 +11,8 @@ nav.Navbar__container {
   z-index: 1000;
 }
 
-nav.Navbar__container a {
+nav.Navbar__container a,
+nav.Navbar__container audio {
   display: flex;
   align-items: center;
   color: var(--Content-Text);

@@ -1,0 +1,18 @@
+.podcastList {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+  border-bottom: 1px solid var(--Box-Shadow);
+  cursor: pointer;
+}
+
+.podcastList h3 {
+  margin: 0;
+}
+
+.podcastList__meta {
+  color: var(--Content-Text);
+  margin-top: 0.5em;
+  font-size: 0.8em;
+}

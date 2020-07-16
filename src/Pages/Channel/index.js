@@ -4,6 +4,7 @@ import Spinner from "../../components/Spinner";
 import Header from "./components/Header";
 import Series from "./components/Series";
 import PodcastList from "./components/PodcastList";
+import "./css/Channel.css";
 
 const Channel = (props) => {
   const idChannel = props.match.params.id;
@@ -14,7 +15,9 @@ const Channel = (props) => {
 
   useEffect(() => {
     Promise.all([
-      fetch(`https://api.audioboom.com/channels/${idChannel}/`)
+      fetch(
+        `https://api.audioboom.com/channels/${idChannel}?image_size_hint[thumb]=250x250`
+      )
         .then((res) => res.json())
         .then((res) => {
           setChannel(res.body.channel);
@@ -39,14 +42,14 @@ const Channel = (props) => {
       {!channel ? (
         <Spinner />
       ) : (
-        <div>
+        <div className="Channel__container">
           <Header
-            logo={channel.urls.logo_image.original}
+            logo={channel.urls.logo_image.thumb.url}
             banner={channel.urls.banner_image.original}
           />
-          <h1>{channel.title}</h1>
+          <h1 className="Channel__container__title">{channel.title}</h1>
           {series.length > 0 && <Series series={series} />}
-          <h2>Latest Podcast</h2>
+          <h2 className="Channel__container__title">Latest Podcast</h2>
           <PodcastList audioClips={audioClips} />
         </div>
       )}
